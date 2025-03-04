@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+</head>
+<body>
+    <div id="box">
+        <br>
+        <h1 id="l1">Log-in</h1>
+        <br>
+        <input type="text" id="i1" placeholder="Name"><br>
+        <br>
+        <input type="text" id="i2" placeholder="password"><br>
+        <br>
+        <button id="b1" onclick="n()">Log-in</button>
+    </div>
+    <h3>name:abhi
+        pass:123
+    </h3>
+    <style>
+        #l1{
+            text-shadow: 5px 5px 0 0 black;
+        }
+        #box{
+            background-color: rgb(44, 158, 203);
+            border-radius: 15px;
+            height: 250px;
+            width: 200px;
+            margin-top: 10%;
+            margin-left: 40%;
+            text-align: center;
+            padding: 10px;
+        }
+        #i1{
+            border-radius: 5px;
+            background-color: rgb(19, 171, 232);
+            box-shadow: 5px 5px 0 0 black;
+            border: none;
+        }
+        #i2{
+            border-radius: 5px;
+            background-color: rgb(19, 171, 232);
+            box-shadow: 5px 5px 0 0 black;
+            border: none;
+        }
+        #b1{
+            border-radius: 5px;
+            background-color: rgb(19, 171, 232);
+            box-shadow: 5px 5px 0 0 black;
+            border: none;
+        }
+        #b2{
+            border-radius: 5px;
+            background-color: rgb(19, 171, 232);
+            box-shadow: 5px 5px 0 0 black;
+            border: none;
+        }
+        #b1:hover{
+            box-shadow: none;
+        }
+        #b2:hover{
+            box-shadow: none;
+        }
+        #i1:hover{
+            box-shadow: none;
+        }
+        #i2:hover{
+            box-shadow: none;
+        }
+    </style>
+    <script>
+        function n(){
+            let x = document.getElementById("i1").value
+            let p = document.getElementById("i2").value
+
+            if(x == "abhi"){
+                if(p == 123){
+                window.alert("loged-in!")
+            }
+            else{
+                window.alert("Wrong pass or name")
+            }
+            }
+            else{
+                window.alert("Wrong pass or name")
+            }
+        
+        }
+    </script>
+</body>
+</html>
